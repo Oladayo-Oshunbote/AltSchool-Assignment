@@ -1,0 +1,20 @@
+.media-page{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img, audio{
+    max-width: 60%;
+     margin: 0 auto;
+     display: block;
+}
+
+video {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}

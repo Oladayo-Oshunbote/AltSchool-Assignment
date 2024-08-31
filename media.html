@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-header">
+        <h1>About Social</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home |</a></li>
+                <li><a href="form.html">Application form |</a></li>
+                <li><a href="table.html">Courses |</a></li>
+                <li><a href="media.html">Media Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="media-page">
+        
+        <h2>Interactive Image</h2>
+        <picture>
+            <source srcset="Screenshot from 2024-08-31 19-30-11.png" media="(max-width: 600px)" class="img">
+            <source srcset="Screenshot from 2024-08-31 19-30-11.png" media="(max-width: 1200px)" class="img">
+            <source srcset="Screenshot from 2024-08-31 19-30-11.png" class="img">
+            <img src="Screenshot from 2024-08-31 19-30-11.png" alt="IMAGE" class="img">
+        </picture>
+
+        <h2>Video</h2>
+        <video controls>
+            <source src="15 Seconds.mp4" type="video/mp4" media="(max-width: 600px)">
+            <source src="15 Seconds.mp4" type="video/mp4" media="(max-width: 1200px)">
+            <source src="15 Seconds.mp4" type="video/mp4">            
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Audio</h2>
+        <audio controls autoplay>
+            <source src="Diversion en la Distancia - Jovenes Viejos.mp3" type="audio/mpe3" media="(max-width: 600px)">
+            <source src="Diversion en la Distancia - Jovenes Viejos.mp3" type="audio/mp3" media="(max-width: 1200px)">
+            <source src="Diversion en la Distancia - Jovenes Viejos.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+</body>
+</html>

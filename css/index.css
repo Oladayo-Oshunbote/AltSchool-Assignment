@@ -1,0 +1,102 @@
+/* global css styling */
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-header{ 
+   background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(17, 17, 17) 20%, rgb(10, 10, 10) 52%, rgba(47,23,71,1) 100%);
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   flex-wrap: wrap-reverse; 
+   color: #fff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+ nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+ }
+
+ a :focus, a:hover{
+    color: #d6cae0;
+ }
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 30px; 
+    padding-bottom: 0;
+}
+
+
+/* Home page css styling*/
+.text-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 20px 0;
+}
+
+.text{
+    margin-top: 12px;
+    max-width: 800px;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.text:last-child{
+    margin-bottom: 50px;
+}
+
+a.top-button{
+    margin-left: 28%;
+}  
+
+
+/* media queries */
+@media screen and (max-width: 1100px) {   
+    .nav-header{
+        justify-content: center;
+        align-items: center;
+    }
+     nav{
+        width: 100%;  
+        display: flex;
+        justify-content: flex-end;
+    }
+   
+    .banner-text{
+        font-size: 29px;
+    }
+
+    .small-text{
+        font-size: 12px;
+    }
+
+    .icons{
+        font-size:20px; 
+        color:#3587ed;
+        margin-right: 3px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav a{
+         font-size: 15px;
+    }
+}
